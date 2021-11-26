@@ -1,0 +1,36 @@
+body{
+    background-color: lightskyblue;
+    color: yellow;
+}
+header{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 5px solid yellow;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav{
+margin:auto;
+margin-top: 10%;
+border: 5px solid;
+padding:10px;
+border-left: 0%;
+width:100px;
+
+}
+section{
+    text-align: center;
+    margin:auto;
+    margin-top: 10%;
+    border: 5px solid;
+    padding:10px;
+    border-left: 0%;
+    width: 50%;
+ 
+}
+img {  
+    max-width: 100%;  
+    height: auto;  
+}
+

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* ----- Grundstil för webbsidan ----- */
+
+html {
+    font-size: 16px;
+}
+html, body{
+    height: 100%;
+}
+
+html, body, nav, header, main, aside, footer, article, section, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- Layout ----- */
+
+body {
+    background-color: #e1d5b7;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 100 px auto 70 px;
+    grid-template-areas:
+   
+    "header header header header"
+    "nav main main aside "
+    "nav main main aside"
+    "nav main main aside"
+    "footer footer footer footer";
+}
+img{
+    width: 200px;
+    height: 0px auto;
+}
+nav {
+    background-color: yellow;
+    grid-area: nav;
+    position: sticky;
+    top:0;
+}
+.content{
+    display: grid;
+    grid-template-columns: auto 800px 200 px auto;
+    
+    overflow: hidden;
+    padding:20px;
+}
+header {
+    background-color: blue;
+    padding: 10px;
+    grid-area: header;
+    
+
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    grid-area: main;
+}
+
+aside {
+    background-color:yellow;
+    padding: 10px;
+    grid-area: aside;
+}
+
+footer {
+    background-color: blue;
+    padding: 10px;
+    grid-area: footer;
+}

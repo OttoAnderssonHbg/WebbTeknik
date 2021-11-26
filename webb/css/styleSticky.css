@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.container {
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    gap: 10px 10px;
+    background-color: pink;
+    grid-template-areas:
+    ".      header   header"
+    "sidebr mainarea sidearea"
+    "footer footer   footer";
+}
+
+div {
+    outline: 1px black solid;
+    box-sizing: border-box;
+}
+
+img {
+    width: 200px;
+}
+
+.MyHeaderArea { 
+    grid-area: header;
+    background-color: burlywood;
+}
+
+.MainArea { 
+    grid-area: mainarea; 
+    background-color: brown;
+}
+
+.SideArea { 
+    grid-area: sidearea; 
+    background-color: green;
+}
+
+.FooterArea { 
+    grid-area: footer; 
+    background-color: yellow;
+}
+
+.SideBarArea { 
+    grid-area: sidebr; 
+    background-color: blueviolet;
+} 

@@ -1,0 +1,58 @@
+html {
+    font-size: 20px;
+}
+
+div, p, figure{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Anger beteendet för egenskaperna "bredd" och "höjd".
+ */
+}
+
+body {
+    background-color: red;
+    margin: 100px;
+}
+figure img {
+    max-width: 100%;
+    height: auto;  
+    
+}
+.container {
+    background-color: whitesmoke;
+    padding: 10px;
+    border: 4px solid #000000;
+    display: grid; 
+    grid-template-columns: 1fr 3fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 1px 1px; 
+    grid-template-areas: 
+      "Sidhuvud Sidhuvud Sidhuvud"
+      "Nav HuvudInnehåll Sidofält"
+      "Nav HuvudInnehåll Sidofält"
+      "Sidfot Sidfot Sidfot"; 
+  }
+  .Nav { grid-area: Nav; }
+  .Sidhuvud { grid-area: Sidhuvud; }
+  .Sidofält { grid-area: Sidofält; }
+  .Sidfot { grid-area: Sidfot; }
+  .HuvudInnehåll { grid-area: HuvudInnehåll;
+    width: 100%;
+    
+    }
+  
+  
+figure, #box {
+    border-radius: 25px;
+    border: 4px solid #000000;
+    padding: 20px;
+
+    flex-basis: 300px; /* Ställer in flexbasen.
+*/
+    flex-shrink: 1; /*Ställer in flex -krympfaktorn. Negativa siffror är ogiltiga.
+*/
+    flex-grow: 1;
+    /* Ställer in flex tillväxtfaktorn. Negativa siffror är ogiltiga.
+ */
+ text-align: center;
+}

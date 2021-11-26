@@ -1,0 +1,32 @@
+body {
+    background-color: red; 
+    color: yellow;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+video {
+    margin-left: -12.5%;
+    
+}
+header {
+margin: 16%;
+
+}
+#first
+{
+
+    margin: -7%;
+    margin-bottom: 5%;
+}
+h5{
+    margin-left: 35%;
+    margin-top: -10%;
+    font-size: large;
+}
+
+nav{
+    margin-bottom: 10%;
+}
