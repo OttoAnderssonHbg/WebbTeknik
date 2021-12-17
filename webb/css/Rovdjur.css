@@ -65,6 +65,11 @@ img {
     height: auto;  
     border: 2px solid #f7f9fb;
 }
+.snabb{
+    vertical-align: bottom;
+    display: inline-block;
+    align-content: center;
+}
 .floatImgRight {
     float: right;
    
@@ -73,7 +78,33 @@ img {
     float: left;
    
 }
+@media screen and (min-width: 769px){
+    .list{
+        font-size: medium;
+        transition: font-size 2s;
+    }
+    .list:hover{
+        font-size: larger;
+    }
 
+    section{
+        width: 75%;
+        font-size: initial;
+        transition: width 1s, font-size 1s;
+    }
+    section:hover{
+        width: 90%;
+        font-size: larger;
+    }
+    article p{
+        font-size: 0px;
+        transition: font-size 1s;
+    }
+    article h3:hover ~ p{
+       font-size: 16px;
+       
+    }
+}
 @media screen and (max-width: 768px){
     .floatImg {
         float: none;
