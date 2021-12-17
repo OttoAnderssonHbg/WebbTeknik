@@ -138,7 +138,7 @@ img {
         list-style-type: none;
     }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 400px){
     body {
         background-color: darkgreen;
         color: white;
